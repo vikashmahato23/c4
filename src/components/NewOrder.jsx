@@ -51,14 +51,13 @@ export const NewOrder = () => {
       </div>
 
       <div className="pastOrders">
-        {/* this button filters the data below. */}
-        {/* it's just a toggle of redux state something like `showUnfinished`  */}
+     
         <button className="filter">
-          {/* Text should change like:   Show {showUnfinished ? "all" : "Only unfinished"} */}
+        
           {toggle ? "showUnfinished" : "Only unfinished"}
         </button>
 
-        {/* Here create a div for every oreder, filter them before based on `showUnfinished` */}
+       
         <div className="past-orders">
           {userorders.map((el) => {
             if (el.owner_name == user.username) return;
