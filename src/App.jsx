@@ -13,7 +13,7 @@ import { store } from "./Redux/store";
 
 function App() {
   let isAuth = useSelector((store) => store.isLoggedIn);
-  // console.log(isAuth);
+
   console.log(store.getState());
   return (
     <div className="App">
@@ -21,7 +21,7 @@ function App() {
         <Link className="nav-home" to="/">
           Home
         </Link>
-        {/* Show either login or logout below */}
+      
         {isAuth ? (
           <Link className="nav-logout" to="/logout">
             Logout
