@@ -4,9 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import { store } from "../Redux/store";
 
 export const NewOrder = () => {
-  // Get data of only this user. store it in redux
-  // GET /orders?owner_name=john will give you all order of user john
-  //  on submit click create a new order, new order has status `Not Accepted`
+
   const userorders = useSelector((store) => store.orders);
   const user = useSelector((store) => store.user);
   const dispatch = useDispatch();
