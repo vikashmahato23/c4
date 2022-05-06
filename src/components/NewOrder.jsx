@@ -65,7 +65,6 @@ export const NewOrder = () => {
                   <span className="id">{el.id}</span>.{" "}
                   <span className="problem">{el.problem}</span>{" "}
                   <span className="cost">
-                    {/* if status is not accepted then keep it empty otherwise show cost like $1234 */}
                     {el.status == "Accepted" ? null : el.cost}
                   </span>
                   <p className="status">Status: {el.status} </p>
