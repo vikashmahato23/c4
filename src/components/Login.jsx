@@ -45,8 +45,6 @@ export const Login = () => {
         placeholder="Enter password"
         onChange={(e) => setPassword(e.target.value)}
       />
-      {/* On this button click make network req to find user with same username and password */}
-      {/* get his role, if role is `admin` take him to `/orders` page otherwise take him to `/neworder` */}
       <button className="submit" onClick={() => handleLogin()}>
         Login
       </button>
